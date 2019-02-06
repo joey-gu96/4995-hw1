@@ -6,3 +6,4 @@ def test_task132():
     data['2010'] = pd.to_numeric(data['2010'])
     total = data['2010'].sum()
     assert round(total) == 7065
+    
