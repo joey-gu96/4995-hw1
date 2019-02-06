@@ -1,6 +1,6 @@
 import pandas as pd
 def test_task132():
-    data = pd.read_csv("input.txt", encoding = 'UTF-16',  index_col = 0, escapechar = '\\')
+    data = pd.read_csv("task1/input.txt", encoding = 'UTF-16',  index_col = 0, escapechar = '\\')
     data['2010'] = data['2010'].replace('--', 0)
     data.fillna(0)
     data['2010'] = pd.to_numeric(data['2010'])
